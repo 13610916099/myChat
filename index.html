@@ -21,19 +21,19 @@
 <style type="text/css">
 .scrollBox{
 	width: 100%;
-	overflow-x: scroll; // 子元素的宽度大于父元素的即可滚动
+	overflow-x: scroll;
 	overflow-y: hidden;
 	border-radius: 4px;
 }
 .scrollBox::-webkit-scrollbar {
 	display:none
-} // 隐藏滚动条
+} 
 
 .scrollBox-list{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	float: left;  // 使其脱离文档流 宽度为所有字元素的和
+	float: left;  
 	min-width: 100%;
 }
 </style>
@@ -67,7 +67,7 @@
 			注册
 		</div>
 		<div  class="flex lineCenter heightCenter" style = "width:90%;color:#333;font-size:14px;margin-top:90px;">
-			<div class="flex fullWidth fontBold" style="" @click="">
+			<div class="flex fullWidth fontBold" >
 				提示：
 			</div>
 			<div class="flex fullWidth " style="padding-left:32px;">
@@ -173,7 +173,7 @@
 				</div>
 				<div class="flex divRight miniFont underline fontBlue" @click="show.editInstroduction=true;"><image src="/chat/static/pic/edit.png" style="width:54px;"/></div>
 			</div>
-			<div class="flex flexRow flexWidth lineSpaceBetween heightCenter" style="">
+			<div class="flex flexRow flexWidth lineSpaceBetween heightCenter" >
 				<div class="flex flexRow" style="margin-left:0px;">
 					<span style="color:#333;font-size:16px;margin-right:5px;margin-top:10px;">{{userInfo.introduction==""?"--":userInfo.introduction}}</span>
 				</div>
@@ -208,7 +208,7 @@
 					<span style="font-weight:bold;">个人简介</span>
 				</div>
 			</div>
-			<div class="flex flexRow flexWidth lineSpaceBetween heightCenter" style="">
+			<div class="flex flexRow flexWidth lineSpaceBetween heightCenter">
 				<div class="flex flexRow" style="margin-left:0px;">
 					<span style="color:#333;font-size:16px;margin-right:5px;margin-top:10px;">{{decodeURI(friendInfo.introduction)}}</span>
 				</div>
